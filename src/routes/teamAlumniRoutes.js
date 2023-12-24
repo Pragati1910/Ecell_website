@@ -4,7 +4,7 @@ const router = express.Router()
 const {
   getAllTeam,
   createTeam,
-  getTeamByIdById,
+  getTeamById,
   updateTeam,
   deleteTeam
 } = require('../controllers/teamAlumniController')
