@@ -34,7 +34,7 @@ const teamSchema = new mongoose.Schema({
     type:String,
     required:[true,'Please provide your designation']
   },
-  year:{
+  batch:{
     type:Number,
     requires:[true,'please provide your passing out year']
   }

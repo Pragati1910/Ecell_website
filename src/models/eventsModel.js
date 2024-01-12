@@ -14,7 +14,7 @@ const eventSchema = new mongoose.Schema({
   },
   title: {
     type: String,
-    required: [true, 'Please provide title of the blog '],
+    required: [true, 'Please provide title of the event '],
     maxlength: 50,
     minlength: 3,
   },
@@ -23,8 +23,8 @@ const eventSchema = new mongoose.Schema({
     required: [true, 'Please provide description '],
   },
   photo:{
-        data: Buffer,
-        contentType: String
+    type:String,
+    required: [true, 'Please provide description '],
   },
   isModify:{
     type:Boolean,
@@ -38,13 +38,19 @@ const eventSchema = new mongoose.Schema({
   eventdetails:{
     type:String
   },
-  studentcoordi:{
+  studentcoordinator1:{
     type:String
   },
-  facultycoordi:{
+  studentcoordinator2:{
     type:String
   },
- contactdetails:{
+  facultycoordinator:{
+    type:String
+  },
+  contactdetails1:{
+    type:String
+  },
+  contactdetails2:{
     type:String
   }
 });

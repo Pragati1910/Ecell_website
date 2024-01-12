@@ -22,10 +22,12 @@ const blogSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please provide description '],
   },
+  photo:{
+    type:String,
+    required: [true, 'Please provide the picture of the blog '],
+  },
   body: {
     type: String,
-    required: [true, 'Please provide the body of the body '],
-
   },
   isModify:{
     type:Boolean,
@@ -33,8 +35,11 @@ const blogSchema = new mongoose.Schema({
   modifiedby: {
     type:String
   },
+  dateofUpload:{
+    typr:String
+  },
   dateOfModification:{
-    type:Date
+    type:String
   },
   like:{
     type:Number
